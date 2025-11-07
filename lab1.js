@@ -5,3 +5,22 @@ function formatFullName(firstName, lastName) {
 
     console.log(fullName)
 }
+
+
+function calculateTotalCost(price, quantity, taxRate){
+    totalCost = (price * quantity) * (1 + taxRate)
+
+    if(price === " "){
+        console.log("Invalid input.")
+    }
+
+    if(quantity === " "){
+        console.log("Invalid input.")
+    }
+    
+    if(taxRate === " "){
+        console.log("Invalid input.")
+    }
+
+    console.log(totalCost)
+}
