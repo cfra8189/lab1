@@ -9,8 +9,10 @@ function formatFullName(firstName, lastName) {
 
 
 // TASK 2
-function calculateTotalCost(price, quantity, taxRate){
-    totalCost = (price * quantity) * (1 + taxRate)
+function calculateTotalCost(price, quantity, taxRate, discount){
+    totalCost = (price * quantity) * (1 + taxRate);
+    totalCostDiscount = (price * quantity) * (1 + taxRate) - discount;
+    
 
     if(price === " "){
         console.log("Invalid input.")
@@ -24,7 +26,12 @@ function calculateTotalCost(price, quantity, taxRate){
         console.log("Invalid input.")
     }
 
-    console.log(totalCost)
+    if(!discount){
+console.log(totalCost)
+    }else{
+        console.log(totalCostDiscount)
+    }
+    
 }
 
 // TASK 3
